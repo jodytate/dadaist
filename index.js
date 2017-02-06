@@ -22,7 +22,8 @@ const jumple = function jumple (array) {
 }
 
 const input = fs.readFileSync(__dirname + '/input.txt', 'utf8').toString();
-const splitUp = input.split(' ');
+const noLineBreaks = input.replace(/(\r\n|\n|\r)/gm, '');
+const splitUp = noLineBreaks.split(' ');
 const stopFiltered = sw.removeStopwords(splitUp);
 const shuffled = shuffle(stopFiltered);
 const newJumple = jumple(shuffled);
