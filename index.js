@@ -1,4 +1,5 @@
 const fs = require('fs');
+const sw = require('stopword');
 
 const shuffle = function shuffle (array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -22,7 +23,8 @@ const jumple = function jumple (array) {
 
 const input = fs.readFileSync(__dirname + '/input.txt', 'utf8').toString();
 const splitUp = input.split(' ');
-const shuffled = shuffle(splitUp);
+const stopFiltered = sw.removeStopwords(splitUp);
+const shuffled = shuffle(stopFiltered);
 const newJumple = jumple(shuffled);
 
 fs.writeFile('output.txt', newJumple, (error) => {
