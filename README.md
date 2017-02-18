@@ -30,3 +30,4 @@ https://www.poets.org/poetsorg/text/chance-operations-poetic-term
 
 - Add basic erasure option, see https://en.wikipedia.org/wiki/A_Humument
 - Add random linebreaks option
+- Add random linespacing option 
