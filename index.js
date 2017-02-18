@@ -21,7 +21,7 @@ const stopFiltered = sw.removeStopwords(splitUp);
 const shuffled = shuffle(stopFiltered);
 const newDada = dada(shuffled);
 
-fs.writeFile('output.txt', newDada, (error) => {
+fs.writeFile(`outputs/output-${fileTimestamp}.txt`, newDada, (error) => {
   if (error) {
     console.error(error);
   } else {
