@@ -20,7 +20,7 @@ const newDada = dada(shuffled);
 
 fs.writeFile('output.txt', newDada, (error) => {
   if (error) {
-    return console.error(error);
+    console.error(error);
   } else {
     console.log('file saved');
   }
