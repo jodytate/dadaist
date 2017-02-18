@@ -3,6 +3,8 @@ const moment = require('moment');
 const shuffle = require('./libs/shuffle.js')
 const sw = require('stopword');
 
+const fileTimestamp = moment().toISOString();
+const humanTimestamp = moment().format('dddd, MMMM Do YYYY, h:mm:ss a');
 
 const dada = function dada (array) {
   const output = [];
