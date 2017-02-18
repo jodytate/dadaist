@@ -13,7 +13,7 @@ const shuffle = function shuffle (array) {
   return array;
 }
 
-const jumple = function jumple (array) {
+const dada = function dada (array) {
   const output = [];
   array.forEach(function (chunk) {
     output.push(chunk);
@@ -26,9 +26,9 @@ const noLineBreaks = input.replace(/(\r\n|\n|\r)/gm, '');
 const splitUp = noLineBreaks.split(' ');
 const stopFiltered = sw.removeStopwords(splitUp);
 const shuffled = shuffle(stopFiltered);
-const newJumple = jumple(shuffled);
+const newDada = dada(shuffled);
 
-fs.writeFile('output.txt', newJumple, (error) => {
+fs.writeFile('output.txt', newDada, (error) => {
   if (error) {
     return console.error(error);
   } else {
