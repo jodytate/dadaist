@@ -9,6 +9,7 @@
   "author": "Jody Tate <jody@josephtate.com> (http://josephtate.com)",
   "license": "MIT",
   "dependencies": {
+    "moment": "^2.17.1",
     "stopword": "^0.1.1"
   }
 }
