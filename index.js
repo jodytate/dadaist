@@ -1,17 +1,7 @@
 const fs = require('fs');
+const shuffle = require('./libs/shuffle.js')
 const sw = require('stopword');
 
-const shuffle = function shuffle (array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-  while (0 !== currentIndex) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-  return array;
-}
 
 const dada = function dada (array) {
   const output = [];
