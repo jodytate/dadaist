@@ -25,3 +25,7 @@ Input some text, output some poetry.
 — from Tzara’s “Dada Manifesto on Feeble & Bitter Love" 
 
 https://www.poets.org/poetsorg/text/chance-operations-poetic-term
+
+### Todos
+
+- Add basic erasure option, see https://en.wikipedia.org/wiki/A_Humument
