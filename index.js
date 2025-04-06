@@ -1,12 +1,13 @@
 const fs = require('fs');
-const moment = require('moment');
 const os = require('os');
 const prependFile = require('prepend-file');
 const shuffle = require('./libs/shuffle.js')
 const sw = require('stopword');
 
-const fileTimestamp = moment().toISOString();
-const humanTimestamp = moment().format('dddd, MMMM Do YYYY, h:mm:ss a');
+const date = new Date();
+const timestamp = Date.now();
+const formattedDate = date.toLocaleString();       // -> "2/1/2013 7:37:08 AM"
+
 
 const dada = function dada (array) {
   const output = [];
@@ -23,7 +24,7 @@ const stopFiltered = sw.removeStopwords(splitUp);
 const shuffled = shuffle(stopFiltered);
 const newDada = dada(shuffled);
 
-const outputFile = `outputs/output-${fileTimestamp}.txt`
+const outputFile = `outputs/output-${timestamp}.txt`
 
 fs.writeFile(outputFile, newDada, encoding='utf8', (error) => {
   if (error) {
@@ -33,7 +34,7 @@ fs.writeFile(outputFile, newDada, encoding='utf8', (error) => {
   }
 });
 
-const prependText = `${humanTimestamp} ${os.EOL} ${os.EOL}`;
+const prependText = `${formattedDate} ${os.EOL} ${os.EOL}`;
 
 prependFile(outputFile, prependText, encoding='utf8', function (error) {
   if (error) {
