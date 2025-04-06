@@ -3,11 +3,13 @@ const os = require('os');
 const prependFile = require('prepend-file');
 const shuffle = require('./libs/shuffle.js')
 const sw = require('stopword');
+const yargs = require('yargs/yargs')
+const { hideBin } = require('yargs/helpers')
+const argv = yargs(hideBin(process.argv)).parse()
 
 const date = new Date();
 const timestamp = Date.now();
 const formattedDate = date.toLocaleString();       // -> "2/1/2013 7:37:08 AM"
-
 
 const dada = function dada (array) {
   const output = [];
@@ -17,7 +19,7 @@ const dada = function dada (array) {
   return output.join(' ');
 }
 
-const input = fs.readFileSync(__dirname + '/test.txt', 'utf8').toString();
+const input = fs.readFileSync(__dirname + `/${argv.file}`, 'utf8').toString();
 const noLineBreaks = input.replace(/(\r\n|\n|\r)/gm, '');
 const splitUp = noLineBreaks.split(' ');
 const stopFiltered = sw.removeStopwords(splitUp);
