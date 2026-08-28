@@ -1,5 +1,15 @@
 # Entries
 
+## August 28, 2026 - 6:35am
+
+We renamed the default branch from master to main because main is the standard GitHub convention and makes the repository easier to understand for most people.
+
+It is a small change, but it helps signal that the project is a normal, modern codebase rather than a legacy setup. It also keeps the naming consistent with the typical workflow used in GitHub, npm, and open-source repos.
+
+The point of the change was not to alter the project itself, only to align the repository with common conventions. A clearer branch name reduces friction, makes the project feel more maintainable, and matches the way most collaborators expect a repo to be organized.
+
+This makes the project easier to share and easier to reason about, even though the code did not materially change.
+
 ## August 28, 2026 - 6:30am
 
 These are the reflections of the current Copilot model in use: MAI-Code-1.1-Flash.
