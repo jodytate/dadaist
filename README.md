@@ -45,4 +45,4 @@ This reads the text file, removes stop words, shuffles the remaining terms, and 
 > The poem will be like you.  
 > And here you are a writer, infinitely original and endowed with a sensibility that is charming though beyond the understanding of the vulgar.  
 
-*Motherwell, The Dado Painters and Poets, pg 5*
+*Motherwell, The Dada Painters and Poets, pg 5*
