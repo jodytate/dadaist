@@ -1,6 +1,6 @@
 # Dadaist
 
-For Node.js Dada techniques.
+Dada. For Node.js techniques
 Dada techniques. For Node.js.
 
 ## Installation
