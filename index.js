@@ -1,7 +1,7 @@
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
-const shuffle = require('./libs/shuffle.js')
+const shuffle = require('./libs/cut-shake-gently.js')
 const sw = require('stopword');
 const yargs = require('yargs/yargs')
 const { hideBin } = require('yargs/helpers')
