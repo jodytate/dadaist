@@ -1,6 +1,5 @@
 const fs = require('fs');
 const os = require('os');
-const prependFile = require('prepend-file');
 const shuffle = require('./libs/shuffle.js')
 const sw = require('stopword');
 const yargs = require('yargs/yargs')
@@ -27,21 +26,12 @@ const shuffled = shuffle(stopFiltered);
 const newDada = dada(shuffled);
 
 const outputFile = `outputs/output-${timestamp}.txt`
+const prependText = `${formattedDate} ${os.EOL} ${os.EOL}`;
 
-fs.writeFile(outputFile, newDada, encoding='utf8', (error) => {
+fs.writeFile(outputFile, prependText + newDada, encoding='utf8', (error) => {
   if (error) {
     console.error(error);
   } else {
     console.log('file saved');
-  }
-});
-
-const prependText = `${formattedDate} ${os.EOL} ${os.EOL}`;
-
-prependFile(outputFile, prependText, encoding='utf8', function (error) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('file prepended');
   }
 });

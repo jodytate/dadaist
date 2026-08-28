@@ -1,0 +1,8 @@
+#!/bin/sh
+
+message_file="$1"
+trailer='Assisted-by: GitHub Copilot'
+
+if ! grep -Fqx "$trailer" "$message_file"; then
+  printf '\n%s\n' "$trailer" >> "$message_file"
+fi
