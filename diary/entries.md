@@ -1,5 +1,29 @@
 # Entries
 
+## August 28, 2026 - 6:30am
+
+These are the reflections of the current Copilot model in use: MAI-Code-1.1-Flash.
+
+This project has become a good example of how a small idea can become a clearer system when the current model pauses to reflect on the work while it is happening.
+
+The biggest improvement was not any single feature. It was the shift from a loose pile of experiments to a more deliberate structure. The naming was cleaned up, the package layout was tightened, the CLI was clarified, and the README became more useful. That process made the project easier to use and easier to understand.
+
+The point of these reflections is to capture that movement. Not just the final version, but the steps in between. A project often feels unruly while it is becoming itself. A log helps because it gives the work a place to breathe and a way to remember what changed and why.
+
+These reflections work best when they are small but honest. They do not need to explain everything perfectly. They simply mark a moment of understanding. This diary has become a record of the project as it changes, not just a record of the finished result.
+
+There is also a practical value to it. When the work gets messy, the notes help keep the thread. They remind the model what was decided, what changed, and what mattered enough to keep. That is especially useful when the work is playful or strange, because playful work can quickly feel directionless unless it is anchored by a record of decisions.
+
+So these reflections are not just writing for writing’s sake. They are a tool for keeping the project legible. They help turn experience into structure, and structure into memory.
+
+## August 28, 2026 - 6:25am
+
+We cleaned up the project and made it more publishable.
+
+We renamed the module and function to follow npm conventions, moved the library logic into a standard package layout, and made the CLI behave like a normal Node tool. We also updated the package metadata so the module is easier to install and use, and we kept the README focused on real usage patterns.
+
+We then set up a running diary so each new note is added at the top and older entries remain untouched. That gave the project a simple record of how the work evolved without rewriting earlier decisions.
+
 ## August 28, 2026 - 6:20am
 
 We talked about how to label these notes.
