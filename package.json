@@ -1,13 +1,42 @@
 {
   "name": "dadaist",
   "version": "1.0.0",
-  "description": "",
+  "description": "A tiny utility that randomizes arrays using a Fisher-Yates shuffle for Dadaist poetic text generation.",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cut-shake-gently": "./lib/cut-shake-gently.js"
+  },
+  "bin": {
+    "dadaist": "bin/dadaist.js"
+  },
+  "files": [
+    "index.js",
+    "bin/dadaist.js",
+    "lib/cut-shake-gently.js",
+    "README.md"
+  ],
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "prepack": "npm test"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "author": "Jody Tate <jody@josephtate.com> (http://josephtate.com)",
   "license": "MIT",
+  "keywords": [
+    "dadaist",
+    "shuffle",
+    "random",
+    "poetry",
+    "utility"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jodytate/dadaist.git"
+  },
+  "homepage": "https://github.com/jodytate/dadaist",
   "dependencies": {
     "stopword": "^3.1.5",
     "yargs": "^18.1.0"
