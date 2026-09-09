@@ -17,7 +17,7 @@ function runDada(options = {}) {
     date.getFullYear()
   ].join('');
 
-  const dada = function dada(array) {
+  const dadaist = function dadaist(array) {
     const output = [];
     array.forEach(function(chunk) {
       output.push(chunk);
@@ -30,7 +30,7 @@ function runDada(options = {}) {
   const splitUp = input.match(/\S+/g) || [];
   const stopFiltered = sw.removeStopwords(splitUp);
   const shuffled = cutShakeGently(stopFiltered);
-  const newDada = dada(shuffled);
+  const newDadaist = dadaist(shuffled);
 
   const outputDirectory = path.join(cwd, 'outputs');
   fs.mkdirSync(outputDirectory, { recursive: true });
@@ -41,7 +41,7 @@ function runDada(options = {}) {
   const outputFile = path.join(outputDirectory, `output-${dateStamp}-${outputNumber}.txt`);
   const prependText = `${formattedDate} ${os.EOL} ${os.EOL}`;
 
-  fs.writeFile(outputFile, prependText + newDada, 'utf8', (error) => {
+  fs.writeFile(outputFile, prependText + newDadaist, 'utf8', (error) => {
     if (error) {
       console.error(error);
       process.exitCode = 1;
@@ -55,7 +55,7 @@ if (require.main === module) {
   const program = new Command();
 
   program
-    .name('dada')
+    .name('dadaist')
     .description('Generate Dadaist poetry from a text file')
     .requiredOption('-f, --file <path>', 'Path to the source text file')
     .action((options) => {

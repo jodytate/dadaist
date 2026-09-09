@@ -1,4 +1,4 @@
-# Dada
+# Dadaist
 
 dadafortechniquesnodejs  
 dAdA. FoR tEcHnIqUeS NoDe.Js .  
@@ -9,13 +9,13 @@ Dada techniques. For Node.js.
 ## Installation
 
 ```bash
-npm install dada
+npm install dadaist
 ```
 
 ## Library usage
 
 ```js
-const { cutShakeGently } = require('dada');
+const { cutShakeGently } = require('dadaist');
 
 const words = ['a', 'newspaper', 'cuts', 'the', 'poem', 'into', 'shards'];
 const shuffled = cutShakeGently(words);
@@ -26,7 +26,7 @@ console.log(shuffled.join(' '));
 ## CLI usage
 
 ```bash
-npx dada --file ./input.txt
+npx dadaist --file ./input.txt
 ```
 
 This reads the text file, removes stop words, shuffles the remaining terms, and writes the resulting poem to an `outputs/` directory.
