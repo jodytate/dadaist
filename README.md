@@ -1,6 +1,9 @@
 # Dadaist
 
-Dada. For Node.js techniques
+dadafortechniquesnodejs  
+dAdA. FoR tEcHnIqUeS NoDe.Js .  
+Fjord Ones. Hence quits Dada.  
+Dada. For Node.js techniques.  
 Dada techniques. For Node.js.
 
 ## Installation
