@@ -7,7 +7,7 @@ const { Command } = require('commander');
 const sw = require('stopword');
 const { cutShakeGently } = require('../index.js');
 
-function runDadaist(options = {}) {
+function runDada(options = {}) {
   const { file, cwd = process.cwd() } = options;
   const date = new Date();
   const formattedDate = date.toLocaleString();
@@ -55,14 +55,14 @@ if (require.main === module) {
   const program = new Command();
 
   program
-    .name('dadaist')
+    .name('dada')
     .description('Generate Dadaist poetry from a text file')
     .requiredOption('-f, --file <path>', 'Path to the source text file')
     .action((options) => {
-      runDadaist({ file: options.file, cwd: process.cwd() });
+      runDada({ file: options.file, cwd: process.cwd() });
     });
 
   program.parse(process.argv);
 }
 
-module.exports = { runDadaist };
+module.exports = { runDada };

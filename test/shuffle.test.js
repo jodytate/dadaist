@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict');
 const test = require('node:test');
-const dadaist = require('../index.js');
-const { cutShakeGently } = dadaist;
+const dada = require('../index.js');
+const { cutShakeGently } = dada;
 
 test('returns a shuffled copy without mutating the input', () => {
   const input = ['a', 'b', 'c', 'd'];
