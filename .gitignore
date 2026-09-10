@@ -3,4 +3,6 @@ outputs
 outputs-archive
 dada_magazine_pdfs/
 shak_sonnets_q1-1609/
+diary/
+chronicle-tips-*.md
 .DS_Store
